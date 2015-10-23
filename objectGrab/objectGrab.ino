@@ -2,7 +2,7 @@
 
 int finished = 1;
 int dropoff = 0;
-int dist = 3;
+int dist = 10;
 
 void setup() 
 {
@@ -77,10 +77,10 @@ void loop() {
      sparki.gripperOpen();
      delay(6000);
      sparki.gripperStop();
-     sparki.moveBackward(dist+2);
+     sparki.moveBackward(dist+3);
      sparki.moveLeft(180);
      dropoff = 0; 
-     dist = dist-1;
+     dist = dist-3;
      finished = 1;
   }
   delay(100); // wait 0.1 seconds
